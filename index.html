@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="RockFest 2024 - L'événement rock de l'année avec les plus grandes têtes d'affiche">
+    <title>RockFest 2024 - Festival de Musique Rock</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://images.unsplash.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">ROCKFEST</div>
+            <button class="burger-menu" aria-label="Menu de navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#lineup">Line-up</a></li>
+                <li><a href="#infos">Infos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>L'ÉVÉNEMENT ROCK DE L'ANNÉE</h1>
+                <a href="#contact" class="cta-button">RÉSERVER MA PLACE</a>
+            </div>
+        </section>
+
+        <!-- CARDS SECTION (Line-up) -->
+        <section id="lineup" class="lineup-section">
+            <h2>NOS TÊTES D'AFFICHE</h2>
+            <div class="cards-container">
+                <article class="card">
+                    <img src="soad.jpg" alt="System of a Down en concert" loading="lazy" width="300" height="300">
+                    <h3>SYSTEM OF A DOWN</h3>
+                </article>
+                <article class="card">
+                    <img src="nirvana.jpg" alt="Nirvana en performance" loading="lazy" width="300" height="300">
+                    <h3>NIRVANA</h3>
+                </article>
+                <article class="card">
+                    <img src="ratm.jpg" alt="Rage Against the Machine sur scène" loading="lazy" width="300"
+                        height="300">
+                    <h3>RAGE AGAINST THE MACHINE</h3>
+                </article>
+            </div>
+        </section>
+
+        <!-- SPLIT SECTION (Présentation) -->
+        <section id="infos" class="presentation-section">
+            <div class="split-container">
+                <div class="split-image">
+                    <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=600&h=450&fit=crop&q=80"
+                        alt="Ambiance du festival RockFest" loading="lazy" width="600" height="450">
+                </div>
+                <div class="split-text">
+                    <h2>L'HISTOIRE DU FESTIVAL</h2>
+                    <p>Depuis 2010, RockFest réunit chaque année les plus grandes légendes du rock et les talents
+                        émergents dans un cadre exceptionnel. Plus qu'un simple festival, c'est une célébration de la
+                        culture rock dans toute sa splendeur.</p>
+                    <p>Avec plus de 50 000 festivaliers chaque année, trois scènes monumentales et une programmation
+                        légendaire, RockFest est devenu l'événement incontournable pour tous les passionnés de musique
+                        rock en Europe.</p>
+                    <p>Rejoignez-nous pour trois jours de concerts inoubliables, d'ambiance électrique et de souvenirs
+                        qui resteront gravés à jamais.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT FORM -->
+        <section id="contact" class="contact-section">
+            <h2>NOUS CONTACTER</h2>
+            <form class="contact-form" aria-label="Formulaire de contact">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
+                </div>
+                <button type="submit" class="submit-button">ENVOYER</button>
+            </form>
+        </section>
+
+        <!-- FAQ SECTION (Accordéon) -->
+        <section class="faq-section">
+            <h2>FAQ</h2>
+            <div class="faq-container">
+                <details class="faq-item">
+                    <summary>Quelles sont les dates du festival ?</summary>
+                    <p>RockFest 2024 se déroulera du 5 au 7 juillet 2024. Les portes ouvrent à 14h chaque jour et les
+                        concerts se terminent vers minuit.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Où se trouve le festival ?</summary>
+                    <p>Le festival a lieu au Parc des Expositions de Lyon, facilement accessible en transport en commun.
+                        Un parking gratuit est disponible pour les festivaliers.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Puis-je camper sur place ?</summary>
+                    <p>Oui ! Nous proposons une zone de camping sécurisée à proximité du site. Les pass camping sont
+                        disponibles lors de l'achat de votre billet festival.</p>
+                </details>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2024 RockFest - Tous droits réservés</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
