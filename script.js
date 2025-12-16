@@ -62,7 +62,7 @@ if (reservationForm) {
         const passText = pass.options[pass.selectedIndex].text;
 
         if (prenom && nom) {
-            alert(`Merci ${prenom} ${nom} !\n\nVotre réservation de ${places} place(s) (${passText}) a bien été enregistrée.\n\nÀ très bientôt au RockFest 2024 ! 🎸`);
+            alert(`Merci ${prenom} ${nom} !\n\nVotre réservation de ${places} place(s) (${passText}) a bien été enregistrée.\n\nÀ très bientôt au RockFest 2026 ! 🎸`);
             reservationForm.reset();
         }
     });
