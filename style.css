@@ -411,6 +411,99 @@ header {
     color: var(--light-gray);
 }
 
+/* ===== RESERVATION SECTION ===== */
+.reservation-section {
+    padding: 5rem 5%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.reservation-section h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    color: var(--red);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.reservation-container {
+    background-color: var(--gray);
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.pricing-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.price-card {
+    background-color: var(--black);
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid var(--gray);
+}
+
+.price-card.featured {
+    border-color: var(--red);
+    position: relative;
+}
+
+.price-card h3 {
+    font-size: 1rem;
+    color: var(--white);
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.price-card .price {
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--yellow);
+}
+
+.price-card .badge {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--red);
+    color: var(--white);
+    padding: 0.3rem 0.8rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    border-radius: 20px;
+}
+
+.reservation-form .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.reservation-form select {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--black);
+    border: 2px solid var(--red);
+    border-radius: 8px;
+    color: var(--white);
+    font-family: 'Kanit', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.reservation-form select:focus {
+    outline: none;
+    border-color: var(--yellow);
+}
+
 /* ===== FOOTER ===== */
 footer {
     background-color: var(--black);
@@ -496,7 +589,8 @@ footer p {
     /* Typography */
     .lineup-section h2,
     .faq-section h2,
-    .contact-section h2 {
+    .contact-section h2,
+    .reservation-section h2 {
         font-size: 2rem;
     }
 
@@ -508,11 +602,27 @@ footer p {
     .lineup-section,
     .presentation-section,
     .contact-section,
-    .faq-section {
+    .faq-section,
+    .reservation-section {
         padding: 3rem 5%;
     }
 
     .contact-form {
         padding: 2rem;
+    }
+
+    /* Reservation Mobile */
+    .pricing-info {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .reservation-form .form-row {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .reservation-container {
+        padding: 1.5rem;
     }
 }

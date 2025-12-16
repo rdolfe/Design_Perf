@@ -48,6 +48,26 @@ contactForm.addEventListener('submit', (e) => {
     }
 });
 
+// ===== RESERVATION FORM =====
+const reservationForm = document.querySelector('.reservation-form');
+
+if (reservationForm) {
+    reservationForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const prenom = document.getElementById('prenom').value;
+        const nom = document.getElementById('nom').value;
+        const places = document.getElementById('places').value;
+        const pass = document.getElementById('pass');
+        const passText = pass.options[pass.selectedIndex].text;
+
+        if (prenom && nom) {
+            alert(`Merci ${prenom} ${nom} !\n\nVotre réservation de ${places} place(s) (${passText}) a bien été enregistrée.\n\nÀ très bientôt au RockFest 2024 ! 🎸`);
+            reservationForm.reset();
+        }
+    });
+}
+
 // ===== SMOOTH SCROLL ENHANCEMENT =====
 // Additional smooth scroll behavior for older browsers
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {

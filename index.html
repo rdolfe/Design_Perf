@@ -37,7 +37,7 @@
         <section class="hero">
             <div class="hero-content">
                 <h1>L'ÉVÉNEMENT ROCK DE L'ANNÉE</h1>
-                <a href="#contact" class="cta-button">RÉSERVER MA PLACE</a>
+                <a href="#reservation" class="cta-button">RÉSERVER MA PLACE</a>
             </div>
         </section>
 
@@ -79,6 +79,61 @@
                     <p>Rejoignez-nous pour trois jours de concerts inoubliables, d'ambiance électrique et de souvenirs
                         qui resteront gravés à jamais.</p>
                 </div>
+            </div>
+        </section>
+
+        <!-- RESERVATION SECTION -->
+        <section id="reservation" class="reservation-section">
+            <h2>RÉSERVER MES PLACES</h2>
+            <div class="reservation-container">
+                <div class="pricing-info">
+                    <div class="price-card">
+                        <h3>PASS 1 JOUR</h3>
+                        <p class="price">59€</p>
+                    </div>
+                    <div class="price-card featured">
+                        <h3>PASS 3 JOURS</h3>
+                        <p class="price">129€</p>
+                        <span class="badge">BEST VALUE</span>
+                    </div>
+                    <div class="price-card">
+                        <h3>PASS VIP</h3>
+                        <p class="price">249€</p>
+                    </div>
+                </div>
+                <form class="reservation-form" aria-label="Formulaire de réservation">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="prenom">Prénom</label>
+                            <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="nom">Nom</label>
+                            <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="places">Nombre de places</label>
+                            <select id="places" name="places" required>
+                                <option value="1">1 place</option>
+                                <option value="2">2 places</option>
+                                <option value="3">3 places</option>
+                                <option value="4">4 places</option>
+                                <option value="5">5 places</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="pass">Type de pass</label>
+                            <select id="pass" name="pass" required>
+                                <option value="1jour">Pass 1 jour - 59€</option>
+                                <option value="3jours" selected>Pass 3 jours - 129€</option>
+                                <option value="vip">Pass VIP - 249€</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="submit-button">CONFIRMER MA RÉSERVATION</button>
+                </form>
             </div>
         </section>
 
